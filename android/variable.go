@@ -63,6 +63,10 @@ type variableProperties struct {
 			Cflags []string
 		}
 
+		Has_legacy_camera_hal1 struct {
+			Cflags []string
+		}
+
 		Override_rs_driver struct {
 			Cflags []string
 		}
@@ -138,6 +142,7 @@ type productVariables struct {
 	Eng                        *bool `json:",omitempty"`
 	EnableCFI                  *bool `json:",omitempty"`
 	Device_uses_hwc2           *bool `json:",omitempty"`
+	Has_legacy_camera_hal1     *bool `json:",omitempty"`
 	Treble                     *bool `json:",omitempty"`
 	Pdk                        *bool `json:",omitempty"`
 	Libart_img_base            *string `json:",omitempty"`
